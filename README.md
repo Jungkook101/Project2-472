@@ -13,6 +13,31 @@ Access the colab link here:
 https://colab.research.google.com/drive/1VxsSmNKk1_2zzeX4tmz198-QLIvD6OU_?usp=sharing
 
 # Structure of the code
+This C program processes sensor data (such as temperature, wind speed, humidity, and the Fire Spread Index) to check for conditions that may trigger alerts related to forest fire risks. The program uses multithreading for reading the sensor data and processing it in parallel.
+### Constants and Thresholds:
+The program defines various constants such as MAX_LINE_LENGTH, PROCESSING_DELAY_MS, and thresholds for temperature, wind speed, humidity, and the Fire Spread Index. These thresholds are used to trigger alerts when specific conditions are met.
+
+### Enums and Structs:
+ProcessorType enum: Represents different processing tasks (FIRE_SPREAD, ALERTS, VISUALIZATION).
+ProcessorArgs struct: Holds the type of processing (ProcessorType) and the processor's name.
+FireParameters struct: Holds the parameters parsed from the CSV line (temperature, wind speed, humidity, and initial spread index).
+
+### Global Variables:
+sensor_data: A global variable to store a line of sensor data.
+data_ready: A boolean flag indicating if the data is ready to be processed.
+should_exit: A boolean flag that controls the program's termination.
+Synchronization variables: pthread_mutex_t and pthread_cond_t are used to manage access to shared data between threads.
+
+### Helper Functions:
+parse_csv_line: This function parses a line of CSV data to extract the temperature, wind, humidity, and Fire Spread Index values.
+check_and_alert: This function checks the parsed data against the thresholds and triggers alerts if any condition is met.
+process_data: A thread function that processes data, waits for new data, and calls check_and_alert if the processing type is ALERTS.
+read_sensor_data: A thread function that reads data from a CSV file line by line and signals the processor threads when new data is available.
+
+### Main Function:
+- Creates a reader thread to read sensor data from a file.
+- Creates three processor threads to handle different tasks (Fire Spread, Alerts, and Visualization).
+- Waits for all threads to finish processing before exiting.
 
 # Functionalities and Test Results
 ![Screenshot 2024-12-05 153749](https://github.com/user-attachments/assets/0ed82564-57da-4ad0-bd41-8df0dba58730)
