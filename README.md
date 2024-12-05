@@ -39,6 +39,9 @@ read_sensor_data: A thread function that reads data from a CSV file line by line
 - Creates three processor threads to handle different tasks (Fire Spread, Alerts, and Visualization).
 - Waits for all threads to finish processing before exiting.
 
+### Flow Chart
+![image](https://github.com/user-attachments/assets/e666f2fe-a6ac-4a72-b98d-0f6132cd82a5)
+
 # Functionalities and Test Results
 ![Screenshot 2024-12-05 153749](https://github.com/user-attachments/assets/0ed82564-57da-4ad0-bd41-8df0dba58730)
 
