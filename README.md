@@ -1,5 +1,7 @@
 # Project2-472
 
+# Wildfire Watch
+
 # Goal of the project
 
 The goal of this project is to implement threading, file processing and multiprocessing on dataset for forest fires. We want to perform these operations on the data so we can simulate fire spreads and generate emergency alerts when a threshhold is passed. There will be alerts for dangerous conditions that correlate with fire spreads such as high temperatures, low humidities or high winds.
@@ -50,4 +52,4 @@ We see this project as a huge success especially for people that live or work up
 
 
 # Discussion and Conclusions
-
+In conclusion, our project is able to sucessfully utilize mutlithreading and multiprocessing to analyze fores fire data and draw critical alarms from certain high risk data. By analyzing this high risk data and sending alarms, we can inform the user about potential fires base on certain conditions. Statistical fire trends across periods of time can be introduced to the data to further keep a more safe environment. 
