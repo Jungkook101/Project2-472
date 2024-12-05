@@ -1,6 +1,4 @@
-# Project2-472
-
-# Wildfire Watch
+# Project2-472 : Wildfire Watch
 
 # Goal of the project
 
