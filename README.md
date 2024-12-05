@@ -18,6 +18,8 @@ https://colab.research.google.com/drive/1VxsSmNKk1_2zzeX4tmz198-QLIvD6OU_?usp=sh
 ![Screenshot 2024-12-05 153749](https://github.com/user-attachments/assets/0ed82564-57da-4ad0-bd41-8df0dba58730)
 
 # Showcasing the achievement of project goals
+We see this project as a huge success especially for people that live or work up in the fire towers in recreational parks. This project can be a great tool to help these workers detect a potential forest fire before it event starts. By keeping track and reporting their daily weather journals, they can prepare for the worst with our tool. The built in alerts can keep emergency protocols at the ready.
+
 
 # Discussion and Conclusions
 
