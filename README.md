@@ -6,8 +6,11 @@ The goal of this project is to implement threading, file processing and multipro
 
 # Significance of the project
 
+This project demonstrates the integration of multithreading in C for real-time data processing, specifically focused on fire risk assessment based on environmental sensor data. The system processes data (temperature, wind speed, humidity, and the fire spread index) and triggers alerts if certain thresholds are exceeded, indicating heightened fire risk. This approach can be applied in wildfire management systems, providing real-time alerts and early warnings, potentially saving lives and property by improving response times to fire outbreaks.
 
 # Installation and Instruction to use
+Access the colab link here:
+https://colab.research.google.com/drive/1VxsSmNKk1_2zzeX4tmz198-QLIvD6OU_?usp=sharing
 
 # Structure of the code
 
